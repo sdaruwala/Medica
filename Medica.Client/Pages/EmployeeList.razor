@@ -1,0 +1,44 @@
+﻿@page "/employeeList"
+@using Medica.Application.DTOs;
+@using Medica.Client.Services;
+@inject IApiService apiService;
+<div class="row mt-5 mb-4">
+
+    <div class="col-md-12 mt-3">
+        <MudDataGrid T="EmployeeRecordDto" Items="@employeeRecords" Dense="true" Striped="true" Bordered="true">
+            <Columns>
+                <PropertyColumn  Property="x => x.FirstName" Title="Firstname"/>
+                <PropertyColumn  Property="x => x.LastName" Title="Lastname"/>
+                <PropertyColumn  Property="x => x.Email" Title="Email" />
+                <PropertyColumn  Property="x => x.Telephone" Title="Phone" />
+                <PropertyColumn  Property="x => x.DateOfBirth" Format="dd-MMM-yyyy" Title="DOB" />               
+                <TemplateColumn  Title="Address">
+                    <CellTemplate>
+                        <MudText>@context.Item.Address1</MudText>
+                        <MudText>@context.Item.Address2</MudText>
+                        <MudText>@context.Item.Town</MudText>
+                        <MudText>@context.Item.County</MudText>
+                        <MudText>@context.Item.Postcode</MudText>
+                    </CellTemplate>
+                </TemplateColumn>               
+                <PropertyColumn  Property="x => x.JobTitle" Title="JobTitle" />
+                <PropertyColumn  Property="x => x.Team" Title="Team" />
+                <PropertyColumn  Property="x => x.LineManager" Title="LineManager" />
+                <PropertyColumn Property="x => x.StartDate" Format="dd-MMM-yyyy" Title="Startdate" />
+                <TemplateColumn  Title="Profile">
+                    <CellTemplate>
+                        <MudImage Src="@($"images/{context.Item.ProfilePicture}")" Width="50" Height="50"/>
+                    </CellTemplate>
+                </TemplateColumn>
+            </Columns>
+        </MudDataGrid>
+    </div>
+</div>
+
+@code {  
+    private List<EmployeeRecordDto> employeeRecords = [];
+    protected override async Task OnInitializedAsync()
+    {
+        employeeRecords = await apiService.GetEmployeeRecordsAsync();
+    }
+}
