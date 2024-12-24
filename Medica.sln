@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medica.API", "Medica.API\Medica.API.csproj", "{501EAD34-380B-4DD8-A7FF-67559E471E03}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medica.ServiceDefaults", "Medica.ServiceDefaults\Medica.ServiceDefaults.csproj", "{04DCAF38-9C75-46DB-A374-4F68120D3100}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medica.Client", "Medica.Client\Medica.Client.csproj", "{B31F9747-ECFA-452F-B881-438B9C29F5BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medica.Tests", "Medica.Tests\Medica.Tests.csproj", "{85B379CF-D029-4AF5-ADA7-A431034A1FF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B31F9747-ECFA-452F-B881-438B9C29F5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31F9747-ECFA-452F-B881-438B9C29F5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31F9747-ECFA-452F-B881-438B9C29F5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B379CF-D029-4AF5-ADA7-A431034A1FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B379CF-D029-4AF5-ADA7-A431034A1FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B379CF-D029-4AF5-ADA7-A431034A1FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B379CF-D029-4AF5-ADA7-A431034A1FF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
