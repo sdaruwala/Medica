@@ -11,8 +11,12 @@
 2. Set `Medica.AppHost` as the startup project.
 3. Build the solution to ensure all dependencies are resolved.
 4. Run the project.
-5. Open your web browser and navigate to the specified URL to view the application.
+5. Open your web browser and navigate to the specified URL to view the application as per below screen snap
+![image](https://github.com/user-attachments/assets/b93b408b-e678-4ca5-8916-2f6f57b14b5c)
 
+6.Click on Employee menu to view below page
+
+![image](https://github.com/user-attachments/assets/aff83541-7b80-455a-9ba4-1b5deb6b55f7)
 
 
 ## Project Structure
