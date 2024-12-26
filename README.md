@@ -1,4 +1,4 @@
----
+
 # Medica
 
 ## Project Structure
@@ -158,5 +158,3 @@ This architecture and design approach ensures:
 - **Scalability:** Easy to extend functionality with minimal impact on existing code.
 - **Maintainability:** Clear structure and adherence to SOLID principles improve code readability and testability.
 - **Testability:** Decoupled components and repository pattern facilitate isolated unit tests.
-
----
