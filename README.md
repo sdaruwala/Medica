@@ -1,3 +1,4 @@
+---
 # Medica
 
 ## Project Structure
@@ -39,6 +40,11 @@ Medica/
 │   ├── Services/
 │   │   ├── ApiService.cs
 │   │   └── IApiService.cs
+├── Aspire/
+│   ├── AppHost/
+│   │   └── Program.cs
+│   ├── ServiceDefault/
+│       └── Extensions.cs
 ├── Tests/
 │   ├── Infrastructure/
 │   │   ├── CsvDataLoaderTests.cs
@@ -46,7 +52,8 @@ Medica/
 │   ├── Application/
 │   │   └── EmployeeRecordServiceTests.cs
 │   ├── API/
-│       └── EmployeeRecordsControllerTests.cs
+│   │   └── EmployeeRecordsControllerTests.cs
+
 ```
 
 ## Architecture
@@ -98,6 +105,15 @@ The Medica project adopts a Clean Architecture approach, ensuring a clear separa
 - `EmployeeList.razor` displays the employee data using Blazor.
 - `ApiService.cs` provides an abstraction for API interactions.
 
+### Aspire Layer
+
+**Responsibilities:** Manages the hosting and default services of the application.
+
+**Key Components:**
+
+- `Program.cs` handles the application's hosting environment.
+- `Extensions.cs` provides default service configurations.
+
 ### Tests
 
 **Responsibilities:** Verifies the functionality of the application components.
@@ -142,3 +158,5 @@ This architecture and design approach ensures:
 - **Scalability:** Easy to extend functionality with minimal impact on existing code.
 - **Maintainability:** Clear structure and adherence to SOLID principles improve code readability and testability.
 - **Testability:** Decoupled components and repository pattern facilitate isolated unit tests.
+
+---
