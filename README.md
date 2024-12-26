@@ -1,6 +1,20 @@
 
 # Medica
 
+## Startup Project
+
+**Startup Project:** `Medica.AppHost`
+
+**Steps to View the Page:**
+
+1. Open the solution in your IDE.
+2. Set `Medica.AppHost` as the startup project.
+3. Build the solution to ensure all dependencies are resolved.
+4. Run the project.
+5. Open your web browser and navigate to the specified URL to view the application.
+
+
+
 ## Project Structure
 
 ```
@@ -158,3 +172,8 @@ This architecture and design approach ensures:
 - **Scalability:** Easy to extend functionality with minimal impact on existing code.
 - **Maintainability:** Clear structure and adherence to SOLID principles improve code readability and testability.
 - **Testability:** Decoupled components and repository pattern facilitate isolated unit tests.
+
+Sure, here's the updated README content with the startup project and steps to view the page:
+
+---
+
