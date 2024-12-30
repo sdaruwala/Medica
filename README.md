@@ -76,7 +76,7 @@ Medica/
 
 ## Architecture
 
-The Medica project adopts a Clean Architecture approach, ensuring a clear separation of concerns and enabling high maintainability, scalability, and testability. The project is divided into the following layers:
+The Medica project adopts a Clean Architecture approach using .NET 9, ensuring a clear separation of concerns and enabling high maintainability, scalability, and testability. The project is divided into the following layers:
 
 ### API Layer
 
